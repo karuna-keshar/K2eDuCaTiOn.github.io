@@ -1,0 +1,290 @@
+.head{
+    min-height:70px;
+}
+h1 {
+    color: white;
+    text-shadow: 2px 2px 4px red;   
+}
+
+h1>span{
+    color: white;
+    text-shadow: 2px 2px 4px blue;  
+}
+
+h4{
+color:rgb(120,120,120);
+text-shadow: 0px 2px 2px black;
+}
+
+.left{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition:transform 0.5s;
+}
+
+@keyframes example {
+    0%   {transform: rotate(-4deg); left: 0; top:0;}
+    25%  {transform: rotate(-4deg); left:200px; top:0;}
+    50%  {transform: rotate(0deg); left:200px; top:0;}
+    75%  {transform: rotate(3deg); left:200px; top:0;}
+    95%  {transform: rotate(3deg); left:0px; top:0;}
+    100% {transform: rotate(0deg); left:0px; top:0;}
+}
+
+.right{
+    text-align: end;        /*delete for sm and do center */
+    margin-top: 10px;     /*should delete this margin for sm*/
+}
+
+.navbar-brand{
+    color: white;
+    text-shadow: 2px 2px 2px red; 
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index:1;
+}
+.navbar-brand>span{
+    color: white;
+text-shadow: 2px 2px 2px blue; 
+}
+.navbar-dark .navbar-nav .nav-link{
+    color:rgb(241, 164, 76);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color:white;
+}
+.input-group input[type=text] {
+    padding: 6px;
+    margin-top:14px;
+    font-size: 17px;
+    width:400px;
+}
+
+.input-group button {
+    padding: 6px 10px;
+    margin-top: 14px;;
+    background: #eee;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    background: #ccc;
+}
+
+.container>.card-deck>.card>img:hover{
+   -webkit-box-shadow:-1px 9px 40px -12px rgb(0,0,0,0.75);   /*google chrome*/
+   -moz-box-shadow:-1px 9px 40px -12px rgb(0,0,0,0.75);      /*mozilla*/
+   box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+   transform: translate3D(0,-5px,0) scale(1.5);
+   transition: 0.5s;
+   z-index:1;
+}
+.container>.card-deck>.card>img{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0s;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: absolute; 
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+  
+/* Modal Content (image) */
+.modal-content {
+    margin:auto;
+    display: block;
+    position: relative;
+    width: 80%;
+    max-width: 700px;
+    height:80%;
+    border-radius: 40px;
+    border: 5px solid white;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+/* Add Animation */
+.modal-content {  
+    animation-name: zoom;
+    animation-duration: 1s;
+}
+ 
+@keyframes zoom {
+    from {transform: scale(0.1)} 
+    to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.carousel-indicators >li {
+    border-radius: 12px;
+    width: 12px;
+    height: 12px;
+    background-color: #8b8989;
+}
+.carousel-indicators >.active{
+    background-color: #eb4141;
+}
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+    border: 5px solid white;
+    border-radius:40px;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.carousel{
+    width:100%;
+    height:100%;
+    border: 5px solid white;
+    border-radius:40px;
+    
+}
+.carousel-inner{
+   width:100%;
+   height:100%;
+   border: 5px solid white;
+   border-radius:40px;
+  
+}
+.carousel-item{
+    width:100%;
+    height:100%;
+    border: 5px solid white;
+    border-radius:40px;    
+}
+.carousel-item>span{
+    display:block;
+    position:fixed;
+    margin-left:18.5%;
+    margin-top:2%;
+    font-size: 16px;
+    color:#eb4141;
+}
+
+.carousel-caption>p{
+    font-family: Sofia;
+    font-weight: bold;
+    font-size: 3vw;
+}
+/*----fotter-------*/
+.footer{
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 50px;
+}
+.footer h6{
+    line-height: 50px;
+    font-weight: bold;
+    background-color: pink;
+}
+@media screen and (max-width: 767px) {
+    .input-group input[type=text]{
+        width: 410px;
+    }
+    .modal-content {
+        width:90%;
+        height:40%;
+        top:10px;
+        margin:auto;
+        border-radius:44px;
+    }
+    .container>.card-deck>.card>img:hover{
+        -webkit-box-shadow:-1px 9px 40px -12px rgb(0,0,0,0.75);   /*google chrome*/
+        -moz-box-shadow:-1px 9px 40px -12px rgb(0,0,0,0.75);      /*mozilla*/
+        box-shadow: -1px 9px 40px -12px rgb(0,0,0,0.75);
+        transform: translate3D(0,-2px,0) scale(1.03);
+        z-index:1;
+     }
+     .carousel-caption>p{
+         font-size:22px;
+     }
+     .right{
+        text-align:center;
+    }
+    @keyframes example {
+        0%   {transform: rotate(-4deg); left: 0; top:0;}
+        25%  {transform: rotate(-4deg); left:60px; top:0;}
+        50%  {transform: rotate(0deg); left:60px; top:0;}
+        75%  {transform: rotate(3deg); left:60px; top:0;}
+        95%  {transform: rotate(3deg); left:0px; top:0;}
+        100% {transform: rotate(0deg); left:0px; top:0;}
+      }
+}  
+/* -------------------Responsive section---------------------- */
+@media(min-width:1200px){
+  
+}
+@media(min-width:992px) and (max-width:1199px){
+
+}
+@media(min-width:768px) and (max-width:991px){
+  .head .left h1{
+    font-size: 25px !important;
+  }
+  .head .right h4{
+    font-size: 18px !important;
+  }
+}
+@media(min-width:576px) and (max-width:767px){
+  .head .left h1{
+    font-size: 25px !important;
+    margin-top: 10px;
+  }
+  .head .right h4{
+    font-size: 20px !important;
+  }
+}
+@media(min-width:480px) and (max-width:575px){
+  .head .left h1{
+    font-size: 26px !important;
+    margin-top: 10px;
+  }
+}
+@media (min-width:411px) and (max-width:479px){
+  .head .left h1{
+    font-size: 22px !important;
+    margin-top: 16px;
+  }
+  .head .right h4{
+    font-size: 14px !important;
+  }
+}
+@media (max-width:410px){
+  .head .left h1{
+    font-size: 18px !important;
+    margin-top: 16px;
+  }
+  .head .right h4{
+    font-size: 13px !important;
+  }
+}
